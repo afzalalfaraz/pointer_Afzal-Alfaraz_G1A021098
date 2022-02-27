@@ -1,0 +1,63 @@
+[22.05, 27/2/2022] Afzal Alfaraz_098: #include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  int a = 10;
+  int b = 15;
+  int* p1 = &b;
+  cout << "alamat p1 " <<p1 << "\n";
+  
+  int* p2 = p1;
+  cout <<"alamat p2 :" << p2 << "\n";
+  
+  int c = 27 ;
+  p1 = &c ;
+  cout <<"alamat p1 : "<< p1 << "\n";
+  
+  a = *p1;
+  cout <<"nilai a : " << a << "\n";
+  
+  int* p3 = &b ;
+  cout <<"alamat p3 : "<< p3 << "\n";
+  
+  *p2 = 8 ;
+  cout << *p2 << "\n";
+
+  return 0;
+}
+[22.05, 27/2/2022] Afzal Alfaraz_098: #include <iostream>
+#include <string>
+using namespace std;
+
+int main (){
+	
+	int a = 10;
+	int b = 15;
+	int c = 27;
+	cout << "nilai a: " << a << "\n";
+	cout << "nilai b: " << b << "\n";
+	cout << "nilai c: " << c << "\n";
+	
+	int* p1 = &a;
+	int* p2 = &b;
+	cout << "alamat p1: " << p1 << "\n";
+	cout << "alamat p2: " << p2 << "\n";
+	
+	*p1 = c;
+	cout << "nilai p1: " << *p1 << "\n";
+	
+	a = *p2;
+	b = 6 ;
+	cout << "nilai a: " << *p2 << "\n";
+	cout << "nilai b: " << b << "\n";
+	
+	int* p3 = &b;
+	cout << "alamat p3: " << p3 << "\n";
+	
+	p3 = &c;
+	cout << "alamat p3: " << p3 << "\n";
+	
+	*p1 = *p3;
+	cout << "nilai p1: " << *p1 << "\n";
+}
